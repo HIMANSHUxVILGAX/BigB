@@ -125,8 +125,8 @@ const CandlestickChart: React.FC<CandlestickChartProps> = ({
           }, 0);
         },
         getBars: (
-          symbolInfo: any,
-          resolution: string,
+          _symbolInfo: any,
+          _resolution: string,
           periodParams: any,
           onHistoryCallback: any,
           onErrorCallback: any
