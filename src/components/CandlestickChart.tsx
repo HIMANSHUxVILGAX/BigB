@@ -100,9 +100,9 @@ const CandlestickChart: React.FC<CandlestickChartProps> = ({
           }, 0);
         },
         resolveSymbol: (
-          symbolName: string,
+          _symbolName: string,
           onSymbolResolvedCallback: any,
-          onResolveErrorCallback: any
+          _onResolveErrorCallback: any
         ) => {
           setTimeout(() => {
             onSymbolResolvedCallback({
