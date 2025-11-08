@@ -154,7 +154,7 @@ const CandlestickChart: React.FC<CandlestickChartProps> = ({
           _onResetCacheNeededCallback: any
         ) => {
           // This would handle real-time updates in a real implementation
-          console.log('Subscribed to real-time updates for:', symbolInfo.name);
+          console.log('Subscribed to real-time updates for: BTC/USDT');
         },
         unsubscribeBars: (subscriberUID: any) => {
           console.log('Unsubscribed from real-time updates:', subscriberUID);
