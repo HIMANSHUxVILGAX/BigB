@@ -278,7 +278,7 @@ class MLService {
 
         // Time-based features
         const hourOfDay = (new Date(candle.timestamp).getHours()) / 24;
-        const dayOfWeek = (new Date(candle.timestamp).getDay()) / 7;
+        // const dayOfWeek = (new Date(candle.timestamp).getDay()) / 7;
 
         sequence.push(
           normalizedOpen,
