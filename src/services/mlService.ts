@@ -421,7 +421,7 @@ class MLService {
     if (predictionId >= 0 && predictionId < this.predictionHistory.length) {
       const prediction = this.predictionHistory[predictionId];
       prediction.actualResult = actualResult;
-      prediction.wasCorrect = prediction.prediction.direction === actualResult;
+      (prediction as any).wasCorrect = prediction.prediction.direction === actualResult;
     }
   }
 
