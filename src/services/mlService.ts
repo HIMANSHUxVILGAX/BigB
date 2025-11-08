@@ -324,6 +324,10 @@ class MLService {
       const lastSequence = inputTensor.slice([0, 0], [1, this.sequenceLength * this.featureCount]);
       const reshapedInput = lastSequence.reshape([1, this.sequenceLength, this.featureCount]);
 
+      if (!this.model) {
+        throw new Error('Model not initialized');
+      }
+
       // Make prediction
       const prediction = this.model.predict(reshapedInput) as tf.Tensor2D;
       const probabilities = await prediction.data();
