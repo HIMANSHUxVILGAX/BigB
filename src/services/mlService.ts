@@ -371,7 +371,7 @@ class MLService {
   /**
    * Generate human-readable reasoning for the prediction
    */
-  private generateReasoning(data: CandlestickData[], direction: 'bullish' | 'bearish', confidence: number): string {
+  private generateReasoning(data: CandlestickData[], direction: 'bullish' | 'bearish', _confidence: number): string {
     const latest = data[data.length - 1];
     const previous = data[data.length - 2];
     const priceChange = ((latest.close - previous.close) / previous.close) * 100;
