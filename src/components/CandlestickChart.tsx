@@ -147,11 +147,11 @@ const CandlestickChart: React.FC<CandlestickChartProps> = ({
           }
         },
         subscribeBars: (
-          symbolInfo: any,
-          resolution: string,
-          onRealtimeCallback: any,
-          subscriberUID: any,
-          onResetCacheNeededCallback: any
+          _symbolInfo: any,
+          _resolution: string,
+          _onRealtimeCallback: any,
+          _subscriberUID: any,
+          _onResetCacheNeededCallback: any
         ) => {
           // This would handle real-time updates in a real implementation
           console.log('Subscribed to real-time updates for:', symbolInfo.name);
