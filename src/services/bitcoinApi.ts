@@ -147,7 +147,8 @@ class BitcoinApiService {
     priceChange: number;
     priceChangePercent: number;
     highPrice: number;
-    lowPrice: openPrice: number;
+    lowPrice: number;
+    openPrice: number;
     volume: number;
   }> {
     try {
