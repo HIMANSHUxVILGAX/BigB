@@ -19,8 +19,7 @@ const Dashboard: React.FC = () => {
     connectionStatus,
     loading,
     error,
-    getRecentData,
-  } = useBitcoinData();
+    } = useBitcoinData();
 
   // Initialize ML service
   useEffect(() => {
