@@ -402,7 +402,7 @@ class MLService {
   getModelMetrics(): MLModelMetrics {
     const relevantHistory = this.predictionHistory.filter(h => h.actualResult !== undefined);
     const totalPredictions = relevantHistory.length;
-    const correctPredictions = relevantHistory.filter(h => h.wasCorrect).length;
+    const correctPredictions = relevantHistory.filter(h => (h as any).wasCorrect).length;
     const accuracy = totalPredictions > 0 ? (correctPredictions / totalPredictions) * 100 : 0;
 
     return {
